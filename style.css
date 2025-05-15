@@ -1,0 +1,828 @@
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('fonts/subset-AvenirLTStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: optional;
+}
+
+
+
+
+.months {
+    font-family: 'Avenir LT Std';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.04rem;
+    /* display: flex; 
+    justify-self: center; 
+    margin: 0; 
+    padding-right: 1rem; */
+}
+
+
+body {
+    /* Centring content */
+    place-content: center;
+}
+
+
+table.dataTable thead th {
+    background-color: #2271B6 !important;
+    color: white !important;
+    line-height: 0.8 !important;
+    height: 5px !important;
+    padding: 20px 0px 20px 0px !important;
+    margin: 0px !important;
+    width: 1000px !important;
+    font-family: 'Avenir LT Std';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+
+
+
+table.dataTable tbody td {
+    font-family: 'Avenir LT Std';
+    font-weight: 350;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #202020;
+}
+
+
+
+
+table.dataTable thead th:nth-child(23) {
+    padding-right: 2rem;
+}
+
+table.dataTable td,
+table.dataTable th {
+    padding: 10px 12px !important;
+    /* top-bottom 12px, left-right 16px */
+}
+
+
+#example td:nth-child(2),
+#example th:nth-child(2) {
+    text-align: center !important;
+}
+
+#example td:nth-child(4),
+#example th:nth-child(4) {
+    text-align: center !important;
+}
+
+
+#example td:nth-child(5) {
+    text-align: left !important;
+    padding-left: 1rem !important;
+}
+
+table.dataTable thead th:nth-child(5) {
+    text-align: left !important;
+    padding-left: 1rem !important;
+}
+
+
+
+
+#example td:nth-child(2) {
+    text-align: left !important;
+    padding-left: 1rem !important;
+}
+
+table.dataTable thead th:nth-child(2) {
+    text-align: left !important;
+    padding-left: 1rem !important;
+}
+
+#example td:nth-child(1) {
+    /* text-align: left !important; */
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+table.dataTable thead th:nth-child(1) {
+    /* text-align: left !important; */
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+
+#example td:nth-child(3),
+#example th:nth-child(3) {
+    text-align: center !important;
+}
+
+table.dataTable thead th,
+table.dataTable td {
+    text-align: center !important;
+}
+
+#example th:nth-child(2) {
+    text-align: right !important;
+}
+
+.modal-full-width {
+    max-width: 100vw !important;
+    margin: 0 !important;
+}
+
+h6 {
+    margin: 0.1rem;
+}
+
+.relative-container {
+    position: relative;
+}
+
+.filters-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* Remove this margin */
+    width: 15rem;
+    height: 22rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+    /* Add these positioning properties */
+    position: absolute;
+    top: 35vh;
+    /* right: 5vw;      */
+    transform: translateY(-50%);
+    background-color: white;
+    z-index: 10;
+}
+
+.filters-container.hidden {
+    display: none;
+}
+
+.filter-group {
+    margin: 0 !important;
+}
+
+.filter-header {
+    cursor: pointer;
+    padding: 8px;
+    margin: 0px !important;
+}
+
+.arrow {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.filter-options {
+    padding-left: 20px;
+    /* Initially hide the options */
+    display: none;
+
+}
+
+.filter-group.open .filter-options {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.apply-filter-button {
+    padding: 8px 15px;
+    margin-right: 5px;
+    margin: 18px 5px;
+    cursor: pointer;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+    border-radius: 8px;
+    background-color: #2271B6;
+    color: white;
+    border: none;
+}
+
+.headoo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+hr {
+    margin: 5px 0px !important;
+}
+
+/* Adapts a floating label for use with a left-handed input group icon */
+.form-floating>.bi-calendar-date+.datepicker_input+label {
+    padding-left: 3.5rem;
+    z-index: 3;
+}
+
+
+.top-guys {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    width: 100vw;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.everything {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.PAYE {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 1.5rem !important;
+    padding-top: 1rem;
+    font-size: 18px;
+}
+
+#customSearch::placeholder {
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    color: #777;
+}
+
+#customSearch::-webkit-input-placeholder {
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    color: #777;
+}
+
+#customSearch::-moz-placeholder {
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    color: #777;
+}
+
+#customSearch:-ms-input-placeholder {
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    color: #777;
+}
+
+#customSearch::-ms-input-placeholder {
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    color: #777;
+}
+
+
+#example_info.dt-info {
+    font-family: 'Avenir LT Std' !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    padding-left: 1rem !important;
+}
+
+.page-link {
+    font-family: "Inter", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+    color: #202020 !important;
+    background-color: white !important;
+    font-size: 14px !important;
+}
+
+.page-link:hover {
+    background-color: #2271B6 !important;
+    color: white !important;
+}
+
+.searchBar {
+    width: 450px !important;
+    margin-left: 0 !important;
+}
+
+
+.selectOption {
+    width: 70px;
+    height: 40px;
+}
+
+.calendarStyle {
+    border-radius: 5px;
+    border: 1px solid rgba(118, 116, 116, 0.71);
+    padding: 4px;
+}
+
+.noOfMonth {
+    display: flex;
+    justify-self: center;
+    margin: 0;
+    padding-right: 1rem;
+}
+
+.selectMonth {
+    width: 70px !important;
+    height: 40px !important;
+}
+
+.calendarPicker {
+    border-radius: 5px !important;
+    border: 1px solid rgba(118, 116, 116, 0.71) !important;
+    padding: 4px !important;
+}
+
+
+
+
+.filters {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-toggle {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.filterImage {
+    width: 21px;
+    height: 19px;
+    padding-right: 0.1rem;
+    padding-top: -0.9rem;
+}
+
+.downloads {
+    text-decoration: none;
+    color: #fff !important;
+    background-color: #2271B6;
+    border-radius: 5px;
+    padding: 7px 25px;
+}
+
+
+
+
+
+div.dt-container div.dt-search{
+    display: none;
+}
+
+div.dt-length{
+    display: none !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .PAYE {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        padding-left: 1.5rem !important;
+        padding-top: 1rem;
+        font-size: 18px;
+    }
+
+    .searchBar {
+        width: 200px !important;
+        margin-left: 0 !important;
+    }
+
+
+    .noOfMonth {
+        display: flex;
+        justify-self: center;
+        margin: 0;
+        padding-right: 0.2rem;
+        font-size: 0.6rem !important;
+        float: right;
+
+    }
+
+
+    .selectMonth {
+        width: 50px !important;
+        height: 40px !important;
+
+        padding-left: 0.3rem !important;
+    }
+
+
+    .calendarPicker {
+        border-radius: 5px !important;
+        border: 1px solid rgba(118, 116, 116, 0.71) !important;
+        padding: 6px !important;
+        width: 4rem !important;
+        height: 1.7rem;
+    }
+
+    .filterImage {
+        width: 16px;
+        height: 14px;
+        padding-right: 0.1rem;
+
+    }
+
+    .filters {
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        font-size: 0.6rem !important;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .dropdown-toggle {
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        font-size: 0.7rem !important;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .downloads {
+        text-decoration: none;
+        color: #fff !important;
+        background-color: #2271B6;
+        border-radius: 5px;
+        padding: 4px 10px;
+    }
+
+    .top-guys {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between;
+        align-self: center !important;
+        width: 100vw;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .filters-container {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        width: 15rem;
+        height: 22rem;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px grey;
+
+        position: absolute;
+        top: 27vh;
+
+        transform: translateY(-50%);
+        background-color: white;
+        z-index: 10;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .PAYE {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        padding-left: 2rem !important;
+        padding-top: 1rem;
+        font-size: 18px;
+    }
+
+
+    .top-guys {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between;
+        align-self: center !important;
+        width: 100vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .searchBar {
+        width: 240px !important;
+        margin-left: 0 !important;
+    }
+
+
+    .noOfMonth {
+        display: flex;
+        justify-self: center;
+        margin: 0;
+        padding-right: 1rem;
+        font-size: 0.7rem !important;
+
+    }
+
+
+    .selectMonth {
+        width: 60px !important;
+        height: 40px !important;
+    }
+
+
+    .calendarPicker {
+        border-radius: 5px !important;
+        border: 1px solid rgba(118, 116, 116, 0.71) !important;
+        padding: 6px !important;
+        width: 7rem !important;
+    }
+
+    .filters-container {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        width: 15rem;
+        height: 22rem;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px grey;
+
+        position: absolute;
+        top: 32vh;
+
+        transform: translateY(-50%);
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .PAYE {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        padding-left: 2.4rem !important;
+        padding-top: 1rem;
+        font-size: 18px;
+    }
+
+    .top-guys {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between;
+        align-self: center !important;
+        width: 100vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .searchBar {
+        width: 240px !important;
+        margin-left: 0 !important;
+    }
+
+
+    .noOfMonth {
+        display: flex;
+        justify-self: center;
+        margin: 0;
+        padding-right: 1rem;
+        font-size: 0.7rem !important;
+
+    }
+
+
+    .selectMonth {
+        width: 60px !important;
+        height: 40px !important;
+    }
+
+
+    .calendarPicker {
+        border-radius: 5px !important;
+        border: 1px solid rgba(118, 116, 116, 0.71) !important;
+        padding: 6px !important;
+        width: 7rem !important;
+    }
+
+    .filters-container {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        width: 15rem;
+        height: 22rem;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px grey;
+
+        position: absolute;
+        top: 29vh;
+
+        transform: translateY(-50%);
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+     .PAYE {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        padding-left: 2.4rem !important;
+        padding-top: 1rem;
+        font-size: 18px;
+    }
+
+    
+    .top-guys {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between;
+        align-self: center !important;
+        width: 100vw;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .searchBar {
+        width: 300px !important;
+        margin-left: 0 !important;
+    }
+
+
+    .noOfMonth {
+        display: flex;
+        justify-self: center;
+        margin: 0;
+        padding-right: 1rem;
+        font-size: 0.7rem !important;
+
+    }
+
+
+    .selectMonth {
+        width: 60px !important;
+        height: 40px !important;
+    }
+
+
+    .calendarPicker {
+        border-radius: 5px !important;
+        border: 1px solid rgba(118, 116, 116, 0.71) !important;
+        padding: 6px !important;
+        width: 7rem !important;
+    }
+    .filters-container {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        width: 15rem;
+        height: 22rem;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px grey;
+
+        position: absolute;
+        top: 33vh;
+
+        transform: translateY(-50%);
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  
+     .PAYE {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        padding-left: 2.4rem !important;
+        padding-top: 1rem;
+        font-size: 18px;
+    }
+
+    .filters-container {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        width: 15rem;
+        height: 22rem;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px grey;
+
+        position: absolute;
+        top: 29vh;
+
+        transform: translateY(-50%);
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1599px) {
+    
+     .PAYE {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        padding-left: 2.4rem !important;
+        padding-top: 1rem;
+        font-size: 18px;
+    }
+
+    .filters-container {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        width: 15rem;
+        height: 22rem;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px grey;
+
+        position: absolute;
+        top: 29vh;
+
+        transform: translateY(-50%);
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 1600px) {
+    
+     .PAYE {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        padding-left: 2.4rem !important;
+        padding-top: 1rem;
+        font-size: 18px;
+    }
+    .filters-container {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        width: 15rem;
+        height: 22rem;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px grey;
+
+        position: absolute;
+        top: 29vh;
+
+        transform: translateY(-50%);
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 1920px) {
+    
+     .PAYE {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        padding-left: 3.4rem !important;
+        padding-top: 1rem;
+        font-size: 18px;
+    }
+    .filters-container {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        width: 15rem;
+        height: 22rem;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px grey;
+
+        position: absolute;
+        top: 29vh;
+
+        transform: translateY(-50%);
+        background-color: white;
+        z-index: 10;
+    }
+}
